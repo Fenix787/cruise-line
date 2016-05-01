@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { background: #FFFFFF);}
+
+
+.clearfix:after {    display:block;    clear:both;}
+
+/*----- Menu Outline -----*/
+
+.menu-wrap {    position:fixed; top:80px; left:220px; width:100%;    box-shadow:0px 1px 3px rgba(0,0,0,0.2);    background:#0079c1;}
+.menu { margin:0px auto;}
+.menu li {    margin:0px;    list-style:none;    font-family:verdana,arial,sans-serif;}
+.menu a {    transition:all linear 0.15s;    color:#FFFFFF;}
+.menu li:hover > a, .menu .current-item > a {    text-decoration:underline;    color:#919191;}
+.menu .arrow {    font-size:8px;    line-height:0%;} 
+
+/*----- Top Level -----*/
+.menu > ul > li {    float:left;    display:inline-block;    position:relative;   font-size:12px;}
+.menu > ul > li > a {    padding:10px 40px;    display:inline-block;  text-shadow:0px 1px 0px rgba(0,0,0,0.4);}
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {    background:#0079c1;}
+
+ /*----- Bottom Level -----*/
+.chrome .menu li:hover .sub-menu {     display:block;} 
+.chrome .sub-menu {   position:absolute;      width:120%;    padding:5px 0px;   top:100%;    left:0px;  display:none; 
+     box-shadow:0px 2px 3px rgba(0,0,0,0.2); background:#0079c1;} 
+.menu li:hover .sub-menu {   display:block; z-index:2;    }  
+.sub-menu { width:120%;    padding:5px 0px;    position:absolute;    top:100%;    left:0px;    display:none;      box-shadow:0px 2px 3px rgba(0,0,0,0.2);    background:#0079c1;}  
+.sub-menu li {    display:block;    font-size:12px;} 
+.sub-menu li a {   display:block; padding:10px 30px;   } 
+.sub-menu li a:hover, .sub-menu .current-item a {    background:#0079c1;}
